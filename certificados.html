@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificados | narciso.dev</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #000814;
+      color: #ffffff;
+    }
+
+    header {
+      text-align: center;
+      padding: 10px 5px;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    .certificados-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .cert-card {
+      background: #198DF9;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .cert-card:hover {
+      background-color: #0f6dc3;
+      transform: translateY(-5px);
+    }
+
+    .cert-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .cert-card h3 {
+      padding: 1rem;
+      font-size: 1rem;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+    <h1>📄 Meus Certificados</h1>
+    <p>Aqui estão alguns cursos e conquistas da minha jornada como desenvolvedor.</p>
+</header>
+
+<section class="certificados-container">
+
+<!-- Exemplo de certificado -->
+    <a style="text-decoration: none; color: white;" href="images/designerdeimpacto.jpg" target="_blank" class="cert-card">
+    <img src="images/designerdeimpacto.jpg" alt="Certificado HTML">
+    <h3>Design Gráfico - Designer de Impacto</h3>
+    </a>
+
+
+<div class="cert-card">
+    <a href="/certificados/certificado-html.jpg" target="_blank" class="cert-card"></a>
+    <img src="/certificados/certificado-javascript.jpg" alt="Certificado JS">
+    <h3>JavaScript Avançado - Rocketseat</h3>
+</div>
+
+<!-- Adicione mais conforme necessário -->
+
+</section>
+</body>
+</html>
